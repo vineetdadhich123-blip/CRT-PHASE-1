@@ -1,0 +1,37 @@
+//problem -- 1 if statement 
+#include <iostream>
+using namespace std;
+int main()
+{
+    int age;
+    cin >> age ;
+    
+    if (age>=18){
+        cout<<"eligiable for vote...";
+        
+
+    }
+    return 0;
+    
+}
+
+
+//problem --2 if-else statement
+#include <iostream>
+using namespace std;
+int main(){
+    int age;
+    cin>>age;
+    
+    if(age>=18){
+        cout<<"eligiable for vote...";
+        
+    }
+    else{
+        cout<<"not eligiable for vote...";
+        
+    }
+    return 0;
+    
+    
+}
