@@ -35,3 +35,40 @@ int main(){
     
     
 }
+
+
+// Problem 3 -- Nested if-else statement
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int age;
+    cin >> age;
+
+    if (age >= 18)
+    {
+        if (age >= 50)
+        {
+            cout << "Senior citizen eligible for vote...";
+        }
+        else
+        {
+            cout << "Eligible for vote";
+        }
+    }
+    else
+    {
+        if (age < 0)
+        {
+            cout << "Enter a valid age number...";
+        }
+        else
+        {
+            cout << "Not eligible for vote";
+        }
+    }
+
+    return 0;
+}
