@@ -171,3 +171,37 @@ int main()
     }
 }
 
+//Problem 7 Nested if else condition
+
+
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{ string dayorNight;
+bool motiondetected;
+
+cout<<"is  it  day or Night..";
+cin>>dayorNight;
+cout<<"is motion  detected?..";
+cin>>motiondetected;
+
+
+if (dayorNight=="Night"||dayorNight=="Night"){
+    if (motiondetected){
+        cout<<"trun on the led  with 100% brightness";
+    }
+    else{
+        cout<<"trun on the led with 10% brightness.";
+    }
+}
+    else{
+        cout<<"trun off the lights...";
+        
+        
+    }
+    return 0;
+    
+}
