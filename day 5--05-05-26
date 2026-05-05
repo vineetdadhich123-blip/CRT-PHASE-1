@@ -1,0 +1,130 @@
+//problem 1 
+//pattern printing
+#include <iostream>
+using namespace std;
+int main(){
+    
+    for(int i=1;i<=5;i++){
+       for(int j=1;j<=i;j++){
+           cout<<"*";
+        }cout<<"\n" ;
+}
+for(int i=5-1;i>=1;i--){
+    for (int j=1;j<=i;j++){
+         cout<<"*";
+        
+    }cout<<"\n";
+}
+    cout<<endl;
+}
+
+/*//problem 2 
+//fumction making practice
+#include <iostream>
+using namespace std;
+
+ void printmessage(){
+    cout<<"it we are learing  fumction...";
+}
+int main(){
+    printmessage();
+    return 0;
+    
+    
+}*/
+
+/*// problem 3 
+//fumction with same values and same return values
+#include <iostream>
+using namespace std;
+int calculatearea(int length,int width){
+    return length* width;
+}
+int main(){
+    int a=10;
+    int b=5;
+    int c=a-b;
+    int area=calculatearea(a,b);
+    cout<<area;
+    
+}*/
+
+
+/*//program 4 
+//type of function
+//program 4.1 ..
+#include <iostream>
+using namespace std;
+void bellring(){
+    cout<<"ting tong";
+}
+int main(){
+    bellring();
+}*/
+
+
+
+/*//program 4.2 .. argument ,no return values
+#include <iostream>
+using namespace std;
+void sendmessage(string message){
+    cout<<message;
+}
+int main(){
+    sendmessage("Bjp wons..");
+}*/
+
+
+
+//program 4.3 .. no argument,return values
+#include <iostream>
+using namespace std;
+int ticketnumber (){
+    return 101;
+    
+}    
+int main(){
+   cout<< ticketnumber();
+}   
+    
+
+
+//program 4.4 .. argument,return values
+#include <iostream>
+using namespace std;
+float convertdollorvalues (int nriconvertusd ){
+    return nriconvertusd/92.2;
+    
+    
+}
+int main(){
+   cout<<convertdollorvalues(2000);
+    
+}
+
+//program 5 
+// function overloading
+
+#include <iostream>
+using namespace std;
+int add(int a,int b){
+    return a+b;
+    
+}
+int add(double a,double b){
+    return a+b;
+}
+int add(int a,int b ,int c){
+    return a-b*c;
+    
+}
+float add(float a, float b ,float c,float d){
+    return a-b+c+d;
+    
+}
+int main(){
+    cout<<add(2,3)<<"\n";
+    cout<<add(4.4,45.5)<<"\n";
+    cout<<add(2,54,34)<<"\n";
+    cout<<add(5.7,4.4,4.5,34.9)<<"\n";
+}
