@@ -1,0 +1,137 @@
+/*//problem--1 
+// coffe billing system
+#include <iostream>
+using namespace std;
+int total(int a){
+    return a*30;
+}
+int main()
+{
+cout<<total(5);
+
+
+}*/
+
+
+/*//problem-- 2
+// store discount application 
+#include <iostream>
+using namespace std;
+
+int discountamount(int a){
+     return a- (a * 0.10);
+    
+}
+int main(){
+    cout<<discountamount(3500);
+}*/
+
+
+
+
+/*//problem-- 3
+// smart ac remote
+// turn on =20
+#include <iostream>
+using namespace std;
+void setTemprature(){
+    cout<<"Temprature set to 22°C"<<"\n";
+}
+void setTemprature(double temp){
+    cout<<"Temprature set to"<<temp<<"°C"<<"\n";
+    }
+void setTemprature(string mode){
+    if(mode=="eco"){
+    cout<<"eTmprature set to 24°C "<<"\n";}
+    else if (mode=="turbo"){
+        cout<<"Temprature set to 18°C"<<"\n";
+    }
+    }
+int main(){
+    setTemprature();
+    setTemprature(20.5);
+    setTemprature("eco");
+}*/
+
+
+
+/*//problem--4
+//pointers
+//declaration,initialization,aritimetice through pointers
+
+#include <iostream>
+using namespace std;
+int main(){
+    int a=10;
+    int *ptr1= &a;
+    
+    int b=30;
+    int *ptr2= &b;
+    
+    int c= a + b;
+    int d= *ptr1 + *ptr2;
+    cout<<c;
+    return 0;
+}*/
+
+
+//problem--5 
+// swapping of 2 variable's values using pointers and using function
+#include <iostream>
+using namespace std;
+void swapNumber (int *ptr1,int *ptr2)
+{int temp=*ptr1;
+*ptr1=*ptr2;
+*ptr2=temp;
+
+}
+int main(){
+    int a ,b;
+    cin>> a;
+    cin>> b;
+    swapNumber(&a,&b);
+    cout<<a<<" "<<b;
+    
+}
+
+//problem--6
+//classes/ object
+
+#include <iostream>
+using namespace std;
+class student{
+    public:
+    string name;
+    int age;
+    
+void introduce(){
+      cout <<"hi there ,this person name is "<<name<<"  and  his  age is "<<age<<"\n";
+  }  
+};
+int main(){
+    student s1,s2;
+    s1.name="vineet";
+    s1.age=19;
+    s2.name="ravi";
+    s2.age=23;
+    
+   s1. introduce();
+   s2.introduce();
+    
+}
+//problem--7
+//access specfier
+
+#include <iostream>
+using namespace std;
+class publicpark
+{
+public:
+void enter(){
+    cout<<"anyone can enter in the park";
+    
+}};
+int main(){
+    publicpark p;
+    p.enter();
+}
