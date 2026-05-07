@@ -1,0 +1,153 @@
+/*//problem--1
+//call by reference
+#include <iostream>
+using namespace std;
+void updatebyValue(int a){
+    a=500;
+}
+ void updateByRefrence(int &a){
+    a=500;
+}
+
+int main(){
+    int originial=100;
+    updatebyValue(originial);
+    cout<<originial<<"\n";
+    updateByRefrence(originial);
+    cout<<originial;
+}*/
+
+
+
+/*//problem--2
+//access specifire
+//private
+
+#include <iostream>
+using namespace std;
+class  BankAccount{
+private:
+    int balance=3900;
+public:
+void showbalance(){
+    cout<<balance;
+}
+};
+int main(){
+    BankAccount obj1;
+    obj1.showbalance();
+}*/
+
+
+/*//problem--3
+//protected access specifire
+#include <iostream>
+using namespace std;
+class parent{
+protected:
+  int secretcode=9814;
+
+};
+class child : public parent{
+public:
+   void accesslocker(){
+        cout<<secretcode;
+    }
+    
+};
+
+
+int main(){
+    child obj1;
+    obj1.accesslocker();
+    
+    
+}*/
+
+/*//problem--4
+//constructor
+//4.1 parameterized constructor
+#include <iostream>
+using namespace std;
+class Student{   
+public:
+string name;
+int age;
+  Student(string StudentName,int Studentage){
+      name=StudentName;
+      age=Studentage;
+      
+  }
+
+
+void introduce(){
+    cout<<"hi there , this person name is "<<name<<" and this age is "<<age<<"\n";
+}};
+
+
+int main(){
+    Student s1("vineet",20);
+    s1.introduce();
+}*/
+
+/*//problem--5
+//constructor
+// default constructor
+#include <iostream>
+using namespace std;
+class wificonnection{ 
+public:
+   string networkName;
+   int password;
+wificonnection(){
+    networkName="act domain fiber";
+    password=88324;
+}
+void showDetails(){
+    cout<<networkName<<" "<<"\n"<<password;
+}    
+    
+};
+int main(){
+    wificonnection obj1;
+    obj1.showDetails();
+    
+}*/
+
+
+
+/*//problem--6
+//constructor overloading
+#include <iostream>
+using namespace std;
+class Rectangle{
+    public:
+    int length;
+    int width;
+    Rectangle(){//constructor--1
+        length=10;
+        width=20;
+    }
+    //constructor--2
+    Rectangle(int l){
+        length=l;
+        width=20;
+    }
+   // constructor--3
+    Rectangle(int l,int b){
+        length=l;
+        width=b;
+    }
+void area(){
+    cout<<length * width<<"  ";
+}
+};
+int main(){
+    Rectangle r1 ;
+    r1.area();
+    Rectangle r2(5);
+    r2.area();
+    Rectangle r3(4,6);
+    r3.area();
+    
+    }*/
