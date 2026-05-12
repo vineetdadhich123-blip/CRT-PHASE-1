@@ -1,0 +1,80 @@
+//
+/*#include <iostream>
+using namespace std;
+
+void printnumber(int n){
+    if(n>5){
+        return;
+    }
+    cout<<n<<" ";
+    printnumber(n+1);
+}
+int main(){
+    printnumber(1);
+}*/
+
+
+problem --2 recursion
+
+#include <iostream>
+using namespace std;
+
+int factorial(int n)
+{
+    if(n == 0||n==1)
+        return 1;
+
+    return n * factorial(n - 1);
+}
+
+int main()
+{
+  cout<<factorial(8);
+
+    return 0;
+}
+
+
+//printnumber recusion
+
+/*#include <iostream>
+using namespace std;
+
+void printnumber(int n){
+    if(n>5){
+        return;
+    }
+    cout<<n<<" ";
+    printnumber(n+1);
+}
+int main(){
+    printnumber(1);
+}*/
+
+
+fibobacu series
+#include <iostream>
+using namespace std;
+
+int fibo(int n){
+    
+    //base condition
+    
+    if(n == 0){
+        return 0;
+        
+    }
+    if(n == 1){
+        return 1;
+        
+        
+    }//logic
+    return fibo(n-1)+fibo(n-2);
+    
+}
+
+int main(){
+    cout<<fibo(4);
+    
+}*/
+
