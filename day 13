@@ -1,0 +1,57 @@
+1//problem   climbStairs
+
+class Solution {
+public:
+
+    int climbStairs(int n)
+    {
+        // Base cases
+        if(n == 0 || n == 1)
+        {
+            return 1;
+        }
+
+        if(n == 2)
+        {
+            return 2;
+        }
+
+        // Recursive call
+        return climbStairs(n - 1) + climbStairs(n - 2);
+    }
+};
+
+
+
+
+2//link list  node create and print linklist
+
+#include <iostream>
+using namespace std;
+class Node{
+    public:
+    
+    int data;
+    Node* next;
+    
+    Node(int new_data){
+        this->data=new_data;
+        this->next=nullptr;
+    }
+    
+};
+void traversal(Node* head){
+    while(head!=nullptr){
+    cout<<head->data<<" ";
+    head =head->next;
+}}
+
+int main(){
+   Node*head=new Node(10);
+   head->next=new Node(20);
+   head->next->next=new Node(30);
+   head->next->next->next=new Node(40);
+   traversal(head);
+   return 0;
+   
+}
