@@ -1,0 +1,90 @@
+// stack reversed in used pop and push function
+#include <iostream>
+#include<stack>
+using namespace std;
+int main()
+{
+    int arr[]={10,20,30,40,50};
+    int n=5;
+    
+    stack<int>st ;
+    
+//push the data
+for(int i=0;i<n;i++)
+{
+    st.push(arr[i]);
+}//pop out the data top from stack
+  for(int i=0;i<n;i++){
+     arr[i]=st.top();
+    st.pop();
+    
+}
+  cout <<"Reversed Array .." ;
+
+for (int i=0;i<n;i++){
+    cout<<arr[i]<<" ";
+    
+    }
+   return 0;
+}
+
+//geeksfor geeks1424
+class Solution {
+public:
+    vector<int> nextLargerElement(vector<int>& arr) {
+
+        int n = arr.size();
+
+        stack<int> st;
+
+        vector<int> nge(n);
+
+        for(int i = n - 1; i >= 0; i--) {
+
+            while(!st.empty() && st.top() <= arr[i]) {
+                st.pop();
+            }
+
+            if(st.empty()) {
+                nge[i] = -1;
+            }
+            else {
+                nge[i] = st.top();
+            }
+
+            st.push(arr[i]);
+        }
+
+        return nge;
+    }
+};
+
+
+
+
+
+
+//valid parameeter
+class Solution {
+public:
+    bool isValid(string s) {
+      stack<char> st;
+      for(char c:s){
+        if(c=='(')
+          st.push(')');
+        else if(c=='[')
+          st.push(']');
+        else if(c=='{')
+           st.push('}');
+
+      
+      else{
+        if(st.empty()||st.top()!=c){
+            return false;
+
+        }st.pop();
+      }
+      }
+      return st.empty();
+    }
+};
